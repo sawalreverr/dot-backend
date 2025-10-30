@@ -11,7 +11,7 @@ import { PostsModule } from './posts/posts.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env.development.local',
+      envFilePath: ['.env.development.local', '.env.test.local', '.env'],
     }),
     DatabaseModule,
     UsersModule,
