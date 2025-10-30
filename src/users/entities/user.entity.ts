@@ -1,6 +1,6 @@
 import { Exclude } from 'class-transformer';
-import { TimestampEntity } from 'common/entities/timestamp.entity';
-import { Post } from 'posts/entities/post.entity';
+import { TimestampEntity } from '@common/entities/timestamp.entity';
+import { Post } from '@posts/entities/post.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()

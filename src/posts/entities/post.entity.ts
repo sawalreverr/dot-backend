@@ -1,4 +1,4 @@
-import { TimestampEntity } from 'common/entities/timestamp.entity';
+import { TimestampEntity } from '@common/entities/timestamp.entity';
 import {
   Column,
   Entity,
@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { User } from 'users/entities/user.entity';
+import { User } from '@users/entities/user.entity';
 
 @Entity()
 export class Post extends TimestampEntity {
