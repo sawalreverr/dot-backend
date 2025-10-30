@@ -1,6 +1,7 @@
 import { Exclude } from 'class-transformer';
 import { TimestampEntity } from 'common/entities/timestamp.entity';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Post } from 'posts/entities/post.entity';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class User extends TimestampEntity {
@@ -13,4 +14,7 @@ export class User extends TimestampEntity {
   @Exclude()
   @Column({ select: false })
   password: string;
+
+  @OneToMany(() => Post, (p) => p.author)
+  posts: Post[];
 }

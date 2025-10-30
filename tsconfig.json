@@ -24,7 +24,8 @@
       "*": ["./src/*"],
       "@common/*": ["./src/common/*"],
       "@users/*": ["./src/users/*"],
-      "@auth/*": ["./src/auth/*"]
+      "@auth/*": ["./src/auth/*"],
+      "@posts/*": ["./src/posts/*"]
     }
   }
 }
