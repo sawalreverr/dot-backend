@@ -87,3 +87,9 @@ Dependency injection, as i understand it, usually consists of three layers:
 - Repository Layer: used to connect the entity structure directly to the database
 - Service/Use Case Layer: used as a connector between controllers/handlers to perform additional logic before reaching the repository (database)
 - Controller/Handler Layer: used as an entry point to receive requests from clients and return responses. This layer is typically used for routing, request validation, authentication & authorization, request parsing, and more.
+
+---
+
+### API Documentation
+
+[Postman API](https://www.postman.com/orange-crater-893073/backend-intern-dot-indonesia/collection/66s7wyz/dot-backend?action=share&creator=34865902)
